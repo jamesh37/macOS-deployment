@@ -1,0 +1,85 @@
+{
+  "preflight" : [],
+  "setupassistant": [
+    {
+      "file": "/Library/Application Support/installapplications/munkitools_launchd-3.0.3265.pkg",
+      "hash": "~256hash~",
+      "name": "Munki LaunchD",
+      "packageid": "com.googlecode.munki.launchd",
+      "type": "package",
+      "url": "~URL~munkitools_launchd-3.0.3265.pkg",
+      "version": "3.0.3265"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munkitools_core-3.1.1.3447.pkg",
+      "hash": "~256hash~",
+      "name": "Munki Core",
+      "packageid": "com.googlecode.munki.core",
+      "type": "package",
+      "url": "~URL~munkitools_core-3.1.1.3447.pkg",
+      "version": "3.1.1.3447"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
+      "hash": "~256hash~",
+      "name": "DEPNotify",
+      "packageid": "menu.nomad.DEPNotify",
+      "type": "package",
+      "url": "~URL~/DEPNotify-1.0.3.pkg",
+      "version": "1.0.3"
+    }
+  ],
+  "userland": [
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/caffeinate.py",
+      "hash": "~256hash~",
+      "name": "Caffeinate Machine",
+      "type": "rootscript",
+      "url": "~URL~caffeinate.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munki_bootstrap.py",
+      "hash": "~256hash~",
+      "name": "Munki Bootstrap",
+      "type": "rootscript",
+      "url": "~URL~munki_bootstrap.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munki_launchd_loader.py",
+      "hash": "~256hash~",
+      "name": "Munki LaunchD Loader",
+      "type": "rootscript",
+      "url": "~URL~munki_launchd_loader.py"
+    },
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/munki_auto_trigger.py",
+      "hash": "~256hash~",
+      "name": "Munki Auto Trigger",
+      "type": "rootscript",
+      "url": "~URL~munki_auto_trigger.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/userscripts/dockutil.py",
+      "hash": "~256hash~",
+      "name": "Dockutil User",
+      "type": "userscript",
+      "url": "~URL~dockutil.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/install_jumpcloud_agent_and_serviceaccount.sh",
+      "hash": "~256hash~",
+      "name": "JumpCloud Install",
+      "type": "rootscript",
+      "url": "~URL~install_jumpcloud_agent_and_serviceaccount.sh"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/depnotify_end.py",
+      "hash": "~256hash~",
+      "name": "DEPNotify End",
+      "type": "rootscript",
+      "url": "~URL~depnotify_end.py"
+    }
+  ]
+}
