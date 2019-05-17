@@ -13,9 +13,13 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: AzureFileCopy@2
+  inputs:
+    SourcePath: '$(Build.Repository.LocalPath)'
+    azureSubscription: 'Induction Healthcare PAYG(b65e243f-e1e9-4726-a050-d4679cb31cce)'
+    Destination: 'AzureBlob'
+    storage: 'macosdeployment'
+    ContainerName: 'test'
+  displayName: 'Copy Repo to Azure Blob'
   
   
