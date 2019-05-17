@@ -10,6 +10,10 @@ pool:
   vmImage: 'win1803'
 
 steps:
+- task: CmdLine@2
+  inputs:
+    script: 'choco install azurepowershell'
+
 - task: AzureFileCopy@2
   inputs:
     SourcePath: '$(Build.Repository.LocalPath)'
