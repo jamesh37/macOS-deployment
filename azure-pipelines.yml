@@ -10,9 +10,6 @@ pool:
   vmImage: 'win1803'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - task: AzureFileCopy@2
   inputs:
     SourcePath: '$(Build.Repository.LocalPath)'
