@@ -21,7 +21,6 @@ steps:
     Destination: 'AzureBlob'
     storage: 'macosdeployment'
     ContainerName: 'test'
-    AdditionalArgumentsForBlobCopy: '/XO /Y'
   displayName: 'Copy Repo to Azure Blob'
       
   
